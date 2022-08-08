@@ -1,0 +1,128 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #DCDCDC;
+    height: 100vh;
+}
+
+.app {
+    width: 90%;
+}
+
+.app h1 {
+    background-color: #7B68EE;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    font-size: 40px;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.app form {
+    display: flex;
+    width: 100%;
+    background-color: #262e4c;
+}
+
+.app form input {
+    font-size: 18px;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #3c4979;
+}
+
+.app form input {
+    outline: none;
+}
+
+.app form button {
+    cursor: pointer;
+    width: 10%;
+    height: 42px;
+    color: white;
+    background-color: #FF69B4;
+    font-weight: 600;
+    font-size: 25px;
+    border: none;
+}
+
+.app form button:hover {
+    background-color: #fa88c1;
+}
+
+.app ul {
+    list-style: none;
+    padding: 0;
+    color: #e0e0e0;
+}
+
+
+.app ul li {
+    padding: 10px;
+    border-bottom: 1px solid  #3a4674;
+    background-color:  #262e4c;
+}
+
+.check {
+    width: 0.8em;
+    height: 00.8em;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    -webkit-appearance: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.check:checked {
+    background-color:  #FF69B4;
+}
+
+.task {
+    padding: 10px 0;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background: transparent;
+    margin-left: 4px;
+    
+}
+
+.task:focus {
+    outline: none;
+}
+
+.app ul li i {
+    float: right;
+    cursor: pointer;
+    margin-top: 14px;
+    color: white;
+    font-size: 20px;
+}
+
+.app ul li i:hover {
+    color: rgb(255, 82, 82);
+}
+
+.completed {
+    color: rgba(192, 192, 192, 0.8);
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 768px){
+    .app {
+        width: 60%;
+    }
+}
