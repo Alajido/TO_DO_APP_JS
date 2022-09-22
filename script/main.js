@@ -43,22 +43,28 @@ function addTask() {
     const list = document.querySelector('ul');
 
     // validating user to make sure something is been entered
-    if (task.value === '' || task.value === " ") {
+    if (task.value.trim() === '') {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Please Add a Task!',
           })
         return false;
+    } else {
+        Swal.fire({
+            icon: 'success',
+            title: '',
+            text: 'Task Added',
+        })
     };
 
     // check if task exist
     if (document.querySelector(`input[value = "${task.value}"]`)) {
+        // sweet alert
         Swal.fire({
             icon: 'info',
             title: 'Oops...',
             text: 'Task Already Exist!',
-            // footer: '<a href="">Why do I have this issue?</a>'
           })
         return false;
     };
@@ -104,7 +110,26 @@ function removeTask(e) {
         };
     });
     localStorage.setItem('tasks', JSON.stringify(tasks))
-    e.parentElement.remove()
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You want to delete this task",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Deleted!',
+            'Your Task has been deleted.',
+            'success',
+            e.parentElement.remove()
+          )
+        }
+    });
+    // e.parentElement.remove()
+   
 };
 
 // store current task to track changes
@@ -120,7 +145,8 @@ function editTask(e) {
     let tasks = Array.from(JSON.parse(localStorage.getItem('tasks')));
 
     // check if user delete the task without typing the updated task
-    if (e.value === '' || e.value === " ") {
+    if (e.value.trim() === '') {
+        // sweet alert
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -133,6 +159,7 @@ function editTask(e) {
     // task already exist
     tasks.forEach(task => {
         if (task.task === e.value) {
+            // sweet alert
             Swal.fire({
                 icon: 'info',
                 title: 'Oops...',

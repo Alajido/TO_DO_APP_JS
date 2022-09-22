@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-    background-color: #DCDCDC;
+
     height: 100vh;
 }
 
@@ -27,6 +27,13 @@
     padding: 10px 0;
     font-size: 40px;
     border-radius: .5rem .5rem 0 0;
+}
+
+.app p {
+    color: white;
+    text-align: center;
+    background-color: #7B68EE;
+    font-family: 'Lobster', cursive;
 }
 
 .app form {
