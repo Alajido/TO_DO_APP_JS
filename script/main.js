@@ -45,6 +45,7 @@ function addTask() {
     // validating user to make sure something is been entered
     if (task.value.trim() === '') {
         Swal.fire({
+            confirmButtonColor: '#ff7733',
             icon: 'error',
             title: 'Oops...',
             text: 'Please Add a Task!',
@@ -52,6 +53,7 @@ function addTask() {
         return false;
     } else {
         Swal.fire({
+            confirmButtonColor: '#ff7733',
             icon: 'success',
             title: '',
             text: 'Task Added',
@@ -62,6 +64,7 @@ function addTask() {
     if (document.querySelector(`input[value = "${task.value}"]`)) {
         // sweet alert
         Swal.fire({
+            confirmButtonColor: '#ff7733',
             icon: 'info',
             title: 'Oops...',
             text: 'Task Already Exist!',
@@ -115,7 +118,7 @@ function removeTask(e) {
         text: "You want to delete this task",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
+        confirmButtonColor: '#ff7733',
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {

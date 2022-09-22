@@ -19,20 +19,22 @@
     width: 90%;
 }
 
-.app h1 {
-    background-color: #7B68EE;
-    color: white;
+.title {
+    background-color: #ff7733;
+    /* background-color: #bf5926; */
+    /* background-color: #7B68EE; */
+    border-radius: .5rem .5rem 0 0;
     text-align: center;
+    color: white;
+}
+.app h1 {
     font-family: 'Montserrat', sans-serif;
     padding: 10px 0;
     font-size: 40px;
-    border-radius: .5rem .5rem 0 0;
+
 }
 
 .app p {
-    color: white;
-    text-align: center;
-    background-color: #7B68EE;
     font-family: 'Lobster', cursive;
 }
 
@@ -49,6 +51,11 @@
     border: none;
     color: white;
     background-color: #3c4979;
+    /* background-color:  #262e4c; */
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #ff7733;
 }
 
 .app form input {
@@ -60,14 +67,16 @@
     width: 10%;
     height: 42px;
     color: white;
-    background-color: #FF69B4;
+    background-color: #bf5926;
+    /* background-color: #FF69B4; */
     font-weight: 600;
     font-size: 25px;
     border: none;
 }
 
 .app form button:hover {
-    background-color: #fa88c1;
+    background-color: #ff7733;
+    /* background-color: #fa88c1; */
 }
 
 .app ul {
@@ -80,7 +89,8 @@
 .app ul li {
     padding: 10px;
     border-bottom: 1px solid  #3a4674;
-    background-color:  #262e4c;
+    /* background-color:  #262e4c; */
+    background-color: #031f4b;
 }
 
 .check {
@@ -124,7 +134,8 @@
 }
 
 .completed {
-    color: rgba(192, 192, 192, 0.8);
+    color: #ff7733;
+    /* color: rgba(192, 192, 192, 0.8); */
     text-decoration: line-through;
 }
 
