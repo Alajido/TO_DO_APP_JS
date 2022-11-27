@@ -58,6 +58,7 @@ function addTask() {
             title: '',
             text: 'Task Added',
         })
+        console.log(`hello world`)
     };
 
     // check if task exist

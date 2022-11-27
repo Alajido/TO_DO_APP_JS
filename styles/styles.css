@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #faf8f8;
+}
+
 .container {
     display: flex;
     flex-direction: column;
