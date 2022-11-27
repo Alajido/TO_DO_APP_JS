@@ -38,9 +38,10 @@ body {
 
 }
 
-/* .app p {
-    font-family: 'Lobster', cursive;
-} */
+.app p {
+    /* font-family: 'Lobster', cursive; */
+    font-size: 10px;
+}
 
 .app form {
     display: flex;
