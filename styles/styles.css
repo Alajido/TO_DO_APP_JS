@@ -40,7 +40,7 @@ body {
 
 .app p {
     /* font-family: 'Lobster', cursive; */
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .app form {
@@ -147,5 +147,8 @@ body {
 @media screen and (min-width: 768px){
     .app {
         width: 60%;
+    }
+    .app p {
+        font-size: 18px;
     }
 }
