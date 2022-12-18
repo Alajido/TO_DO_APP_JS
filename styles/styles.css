@@ -153,8 +153,7 @@ body {
     float: right;
     cursor: pointer;
     margin-top: 14px;
-    /* color: var(--primary-text-color); */
-    color: #ff7733;
+    color: var(--primary-text-color);
     font-size: 20px;
 }
 
