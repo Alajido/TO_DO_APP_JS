@@ -62,7 +62,8 @@ body {
 .app form {
     display: flex;
     width: 100%;
-    background-color: #262e4c;
+    /* background-color: #262e4c; */
+    /* border: 1px solid red; */
 }
 
 .app form input {
@@ -71,7 +72,12 @@ body {
     padding: 10px;
     border: none;
     color: var(--primary-text-color);
-    background-color: #3c4979;
+    /* background-color: #3c4979; */
+    background-color: gray;
+}
+
+.app form input::placeholder {
+    color: var(--background-color);
 }
 
 .swal2-styled.swal2-confirm {
