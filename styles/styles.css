@@ -73,7 +73,7 @@ body {
     border: none;
     color: var(--primary-text-color);
     /* background-color: #3c4979; */
-    background-color: gray;
+    background-color: rgb(32, 32, 32);
 }
 
 .app form input::placeholder {
