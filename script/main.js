@@ -1,6 +1,17 @@
 // on app load, get all task from the localStorage
 window.onload = loadTasks;
 
+const darkModeToggler = document.querySelector('#dark-mode-toggle');
+let darkMode = localStorage.getItem('darkMode');
+const icon = document.querySelector('#icon')
+console.log(darkModeToggler, icon, darkMode);
+
+const enableDarkMode = () => {
+    document.body.classList.add('dark-mode');
+
+    localStorage.setItem('darkMode', 'enable');
+}
+
 // on form Submit, add task
 document.querySelector('form').addEventListener('submit', e =>{
     // prevent form from submitting the data

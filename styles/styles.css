@@ -6,9 +6,18 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #faf8f8;
+:root {
+    --background-color: #faf8f8;
+
 }
+
+.dark-mode {
+    --background-color: #000106;
+}
+
+/* body {
+    background-color: #000106;
+} */
 
 .container {
     display: flex;
@@ -24,15 +33,17 @@ body {
     justify-content: flex-end;
 }
 
+#dark-mode-toggle {
+    background-color: transparent;
+    border: none;
+}
+
 .app, .header {
     width: 90%;
-    /* border: 1px solid green; */
 }
 
 .title {
     background-color: #ff7733;
-    /* background-color: #bf5926; */
-    /* background-color: #7B68EE; */
     border-radius: .5rem .5rem 0 0;
     text-align: center;
     color: white;
@@ -45,7 +56,6 @@ body {
 }
 
 .app p {
-    /* font-family: 'Lobster', cursive; */
     font-size: 12px;
 }
 
@@ -62,7 +72,6 @@ body {
     border: none;
     color: white;
     background-color: #3c4979;
-    /* background-color:  #262e4c; */
 }
 
 .swal2-styled.swal2-confirm {
@@ -79,7 +88,6 @@ body {
     height: 42px;
     color: white;
     background-color: #bf5926;
-    /* background-color: #FF69B4; */
     font-weight: 600;
     font-size: 25px;
     border: none;
@@ -87,7 +95,6 @@ body {
 
 .app form button:hover {
     background-color: #ff7733;
-    /* background-color: #fa88c1; */
 }
 
 .app ul {
@@ -100,7 +107,6 @@ body {
 .app ul li {
     padding: 10px;
     border-bottom: 1px solid  #3a4674;
-    /* background-color:  #262e4c; */
     background-color: #031f4b;
 }
 
@@ -146,7 +152,6 @@ body {
 
 .completed {
     color: #ff7733;
-    /* color: rgba(192, 192, 192, 0.8); */
     text-decoration: line-through;
 }
 
