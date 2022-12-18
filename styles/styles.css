@@ -8,27 +8,25 @@
 
 :root {
     --background-color: #faf8f8;
-
+    --primary-text-color: white;
 }
 
 .dark-mode {
     --background-color: #000106;
 }
 
-/* body {
-    background-color: #000106;
-} */
+body {
+    background-color: var(--background-color);
+}
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-    border: 3px solid green;
     height: 100vh;
 }
 .header {
-    border: 2px solid red;
     display: inline-flex;
     justify-content: flex-end;
 }
@@ -46,7 +44,7 @@
     background-color: #ff7733;
     border-radius: .5rem .5rem 0 0;
     text-align: center;
-    color: white;
+    color: var(--primary-text-color);
 }
 .app h1 {
     font-family: 'Montserrat', sans-serif;
@@ -70,7 +68,7 @@
     width: 90%;
     padding: 10px;
     border: none;
-    color: white;
+    color: var(--primary-text-color);
     background-color: #3c4979;
 }
 
@@ -86,7 +84,7 @@
     cursor: pointer;
     width: 10%;
     height: 42px;
-    color: white;
+    color: var(--primary-text-color);
     background-color: #bf5926;
     font-weight: 600;
     font-size: 25px;
@@ -115,7 +113,7 @@
     height: 00.8em;
     border-radius: 50%;
     cursor: pointer;
-    background-color: white;
+    background-color: var(--primary-text-color);
     -webkit-appearance: none;
     border: 1px solid rgb(255, 255, 255);
 }
@@ -128,7 +126,7 @@
     padding: 10px 0;
     font-size: 18px;
     border: none;
-    color: white;
+    color: var(--primary-text-color);
     background: transparent;
     margin-left: 4px;
     
@@ -142,7 +140,7 @@
     float: right;
     cursor: pointer;
     margin-top: 14px;
-    color: white;
+    color: var(--primary-text-color);
     font-size: 20px;
 }
 

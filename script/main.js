@@ -9,8 +9,35 @@ console.log(darkModeToggler, icon, darkMode);
 const enableDarkMode = () => {
     document.body.classList.add('dark-mode');
 
-    localStorage.setItem('darkMode', 'enable');
-}
+    localStorage.setItem('darkMode', 'enabled');
+};
+
+const disableDarkMode = () => {
+    document.body.classList.remove('dark-mode');
+
+    localStorage.setItem('darkMode', null);
+};
+
+
+
+if (darkMode === 'enabled') {
+    enableDarkMode();
+    icon.src ="/images/sun2.png"
+};
+
+
+darkModeToggler.addEventListener('click', () => {
+    darkMode = localStorage.getItem('darkMode');
+    if (darkMode !== 'enabled'){
+        enableDarkMode()
+        icon.src ="/images/sun2.png"
+    } else {
+        disableDarkMode()
+        icon.src ="/images/moon.png"
+    }
+});
+
+
 
 // on form Submit, add task
 document.querySelector('form').addEventListener('submit', e =>{
