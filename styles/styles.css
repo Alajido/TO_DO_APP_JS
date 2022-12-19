@@ -8,13 +8,18 @@
 
 :root {
     --background-color: #faf8f8;
+    --title-background-color: #faf8f8;
     --form-input-text-color: white;
+    --span-text-color:  #ff7733;
     --primary-text-color: #000106;
     --shadow-color: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .dark-mode {
     --background-color: #000106;
+    --primary-text-color: white;
+    --title-background-color: #ff7733;
+    --span-text-color: #000106;
 }
 
 body {
@@ -43,7 +48,7 @@ body {
 }
 
 .title {
-    background-color: var(--background-color);
+    background-color: var(--title-background-color);
     box-shadow: var(--shadow-color);
     border-radius: .5rem .5rem 0 0;
     text-align: center;
@@ -53,6 +58,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding: 10px 0;
     font-size: 40px;
+}
+
+#span {
+    color: var(--span-text-color);
 }
 
 .app p {
