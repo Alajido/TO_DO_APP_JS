@@ -16,21 +16,21 @@ const enableDarkMode = () => {
     // seeting the dark mode from the local storage
     localStorage.setItem('darkMode', 'enabled');
 };
-// removing dark mode function
+// disabling dark mode function
 const disableDarkMode = () => {
+    // removing the dark mode class list
     document.body.classList.remove('dark-mode');
-
+    //  seeting the dark mode from the local storage to null
     localStorage.setItem('darkMode', null);
 };
 
-
-
+// checking if dark mode is enable
 if (darkMode === 'enabled') {
     enableDarkMode();
     icon.src ="/images/sun2.png"
 };
 
-
+// toggling function to swtche from dark to light mode
 darkModeToggler.addEventListener('click', () => {
     darkMode = localStorage.getItem('darkMode');
     if (darkMode !== 'enabled'){
