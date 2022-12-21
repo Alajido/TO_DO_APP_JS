@@ -1,17 +1,22 @@
 // on app load, get all task from the localStorage
 window.onload = loadTasks;
 
+// dark mode toggler button
 const darkModeToggler = document.querySelector('#dark-mode-toggle');
+// getting the current browser theme from the local storage
 let darkMode = localStorage.getItem('darkMode');
+// dark and light mode icon
 const icon = document.querySelector('#icon')
 console.log(darkModeToggler, icon, darkMode);
 
+// enable dark mode function
 const enableDarkMode = () => {
+    // setting and addinge the dark mode classlist 
     document.body.classList.add('dark-mode');
-
+    // seeting the dark mode from the local storage
     localStorage.setItem('darkMode', 'enabled');
 };
-
+// removing dark mode function
 const disableDarkMode = () => {
     document.body.classList.remove('dark-mode');
 
